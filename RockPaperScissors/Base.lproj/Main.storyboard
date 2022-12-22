@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RockPaperScissors" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7db-Yl-srU">
+                                <rect key="frame" x="0.0" y="224" width="393" height="27.666666666666671"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2I-ro-0XN">
+                                <rect key="frame" x="29" y="297" width="84" height="98.666666666666657"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="👊">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="60"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="PlayRock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uyH-xj-Fpt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7Q-hx-qcC">
+                                <rect key="frame" x="155" y="297" width="83" height="98.666666666666657"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="✋">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="60"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="PlayPaper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uZd-Zv-gGJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uek-qf-z0R">
+                                <rect key="frame" x="275" y="297" width="82" height="98.666666666666657"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="✌️">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="60"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="PlayScissors:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gbY-uG-rde"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1X-nf-OOV">
+                                <rect key="frame" x="0.0" y="244" width="393" height="574"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Play Again?">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ReplayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8XV-Um-vGb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apf-4x-Lgp">
+                                <rect key="frame" x="0.0" y="114" width="393" height="58.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="x1X-nf-OOV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0Q0-DD-ABD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x1X-nf-OOV" secondAttribute="trailing" id="87A-2H-xvY"/>
+                            <constraint firstItem="x1X-nf-OOV" firstAttribute="top" secondItem="b2I-ro-0XN" secondAttribute="bottom" id="B6g-t7-92l"/>
+                            <constraint firstItem="7db-Yl-srU" firstAttribute="top" secondItem="apf-4x-Lgp" secondAttribute="bottom" id="F0j-oq-1Zq"/>
+                            <constraint firstItem="b2I-ro-0XN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KAc-rB-1uB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7db-Yl-srU" secondAttribute="trailing" id="Liz-ro-wYD"/>
+                            <constraint firstItem="7db-Yl-srU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NjY-CI-9XC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="x1X-nf-OOV" secondAttribute="bottom" id="QUd-QI-Fh1"/>
+                            <constraint firstItem="O7Q-hx-qcC" firstAttribute="leading" secondItem="b2I-ro-0XN" secondAttribute="trailing" id="R4c-F9-t2t"/>
+                            <constraint firstItem="b2I-ro-0XN" firstAttribute="top" secondItem="7db-Yl-srU" secondAttribute="bottom" id="SHN-Hh-b75"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="apf-4x-Lgp" secondAttribute="trailing" id="W4C-Fc-nVR"/>
+                            <constraint firstItem="x1X-nf-OOV" firstAttribute="top" secondItem="Uek-qf-z0R" secondAttribute="bottom" id="XNo-XB-G7G"/>
+                            <constraint firstItem="O7Q-hx-qcC" firstAttribute="top" secondItem="7db-Yl-srU" secondAttribute="bottom" id="Ybe-V9-vrS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uek-qf-z0R" secondAttribute="trailing" id="fIw-94-z35"/>
+                            <constraint firstItem="Uek-qf-z0R" firstAttribute="leading" secondItem="O7Q-hx-qcC" secondAttribute="trailing" id="mzZ-zB-61k"/>
+                            <constraint firstItem="apf-4x-Lgp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="n3h-fk-Af5"/>
+                            <constraint firstItem="Uek-qf-z0R" firstAttribute="top" secondItem="7db-Yl-srU" secondAttribute="bottom" id="quS-uG-wPZ"/>
+                            <constraint firstItem="apf-4x-Lgp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="roD-cx-qe4"/>
+                            <constraint firstItem="x1X-nf-OOV" firstAttribute="top" secondItem="O7Q-hx-qcC" secondAttribute="bottom" id="xLC-Je-19E"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Computer" destination="apf-4x-Lgp" id="OK0-bS-oDJ"/>
+                        <outlet property="Paper" destination="O7Q-hx-qcC" id="952-aS-lD2"/>
+                        <outlet property="Rematch" destination="x1X-nf-OOV" id="8oy-OR-O0L"/>
+                        <outlet property="Rock" destination="b2I-ro-0XN" id="EFc-d4-Jm0"/>
+                        <outlet property="Scissors" destination="Uek-qf-z0R" id="I0Y-ls-mbb"/>
+                        <outlet property="Status" destination="7db-Yl-srU" id="j3l-Ff-3cB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57.251908396946561" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
